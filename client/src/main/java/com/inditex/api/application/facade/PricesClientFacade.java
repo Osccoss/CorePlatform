@@ -4,7 +4,6 @@ import com.inditex.api.application.model.Prices;
 import com.inditex.api.application.model.ProductPriceRequest;
 
 import java.util.List;
-import java.util.Optional;
 
 public interface PricesClientFacade {
     /**
