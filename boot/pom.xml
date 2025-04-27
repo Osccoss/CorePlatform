@@ -11,7 +11,7 @@
   <artifactId>inditex-boot</artifactId>
   <packaging>jar</packaging>
   <name>${project.groupId}.${project.artifactId}</name>
-  <description>boot module.</description>
+  <description>Core platform inditex.</description>
   
   <dependencies>
     <dependency>
