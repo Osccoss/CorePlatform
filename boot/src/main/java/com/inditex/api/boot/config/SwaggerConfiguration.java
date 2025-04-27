@@ -21,9 +21,6 @@ public class SwaggerConfiguration  {
 
     @Value("${info.app.version}")
     private String appVersion;
-
-    @Value("${info.app.artifactId}")
-    private String appArtifactId;
     
     @Bean
     public OpenAPI customOpenAPI() {
