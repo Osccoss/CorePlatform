@@ -8,15 +8,19 @@ Requisitos
 Añadidos
 - Arquitectura Hexagonal
 - JPA
+- Swagger
 
 URL para la base de datos H2 
 
-    - http://localhost:8080/h2-console
-    - cambiar configuracion url=jdbc:h2:mem:testinditexdb el resto es extandar
-    
+- http://localhost:8080/h2-console
+- cambiar configuracion url=jdbc:h2:mem:testinditexdb el resto es extandar
+
+Swagger
+ - http://localhost:8080/swagger-ui/index.html#/
+
 Mejoras a Futuro 
 
-- Realizar un checkstyle más exaustivo y completo. Ignorando en la cobertura entidades y mappers.
+- Realizar un checkstyle más exaustivo y completo. Calidad de codigo con Sonnar, Ignorando en la cobertura entidades y mappers.
 
 Curls para las pruebas:
 
