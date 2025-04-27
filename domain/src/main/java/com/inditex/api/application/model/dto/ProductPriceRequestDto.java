@@ -1,5 +1,6 @@
 package com.inditex.api.application.model.dto;
 
+import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
 import java.time.LocalDateTime;
@@ -14,7 +15,12 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 public class ProductPriceRequestDto {
     
+    @NotNull
     private String brandId;
+    
+    @NotNull
     private String productId;
+    
+    @NotNull
     private LocalDateTime searchDate;
 }
