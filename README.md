@@ -16,8 +16,6 @@ URL para la base de datos H2
     
 Mejoras a Futuro 
 
-- Implementar la configuración del Swagger
-- Validaciones de entradas de datos @Valid
 - Realizar un checkstyle más exaustivo y completo. Ignorando en la cobertura entidades y mappers.
 
 Curls para las pruebas:
