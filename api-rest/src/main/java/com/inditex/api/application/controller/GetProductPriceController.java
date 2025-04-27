@@ -4,6 +4,8 @@ import com.inditex.api.application.controller.mapper.ProductPriceControllerMappe
 import com.inditex.api.application.model.dto.ProductPriceRequestDto;
 import com.inditex.api.application.model.dto.ProductPriceResponseDto;
 import com.inditex.api.application.usecase.ProductPriceUseCase;
+
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -31,7 +33,7 @@ public class GetProductPriceController {
      * @return the product price
      */
     @GetMapping
-    public ResponseEntity<ProductPriceResponseDto> getProductPrice( @RequestBody ProductPriceRequestDto productPriceRequest) {
+    public ResponseEntity<ProductPriceResponseDto> getProductPrice( @Valid @RequestBody ProductPriceRequestDto productPriceRequest) {
         return ResponseEntity.ok(this.productPriceControllerMapper.responseToDto
                 (this.productPriceUseCase.getProductPrice(this.productPriceControllerMapper.requestToDomain(productPriceRequest))));
     }
